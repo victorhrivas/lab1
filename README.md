@@ -6,7 +6,7 @@ La aplicación móvil es una bitácora de viajes, en la cual un usuario genera v
 
 En las siguientes secciones revisamos las características de esta aplicación de backend, su configuración, y su ejecución.
 
-Si lo deseas, puedes saltar a la sección "Proyecto P1.1" para ver los requisitos de esta primera entrega de proyecto.
+Si lo deseas, puedes saltar a la sección "Requisitos de la entrega de proyecto 1.1" para ver los requisitos de esta primera entrega de proyecto.
 ## Requisitos para el trabajo con la aplicación de backend
 
 ### Requisitos de sistema operativo
