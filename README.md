@@ -1,3 +1,4 @@
+__Nombres de integrantes:__ [Incorporar aquí]
 # Proyecto 1.1: Travel Log - Aplicación de Backend
 
 En el primer proyecto de este curso usarás la presente aplicación desarrollada con Ruby on Rails 7 como backend para la aplicación web móvil que se requiere desarrollar.
