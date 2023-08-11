@@ -52,7 +52,7 @@ Es conveniente contar con RVM para crear un gemset y allí instalar todas las de
 $rvm gemset create travel-log
 $rvm use 3.1.1@travel-log
 $RAILS_ENV=development db:setup
-$RAILS_ENV=development db:populate_fake_data
+$RAILS_ENV=development db:populate_fake_data # llena la base de datos con datos de prueba
 ```
 
 El directorio raíz tiene archivos `.ruby-version` y `.ruby-gemset` con información de la versión de ruby y gemset que se debe usar, por lo que cada vez que accedas al directorio raíz por el terminal RVM automáticamente seleccionará la versión de ruby y el gemset que se necesitan.
@@ -136,7 +136,7 @@ __URL de la colección Postman:__ [insertar aquí]
 
 ## Entrega
 
-Deben entregar su trabajo en este repositorio, con posibilidad de realizar push hasta el jueves 17/8 hasta las 23:59 hrs.
+Deben entregar su trabajo en este repositorio, con posibilidad de realizar push hasta el domingo 20/8 hasta las 23:59 hrs.
 
 ## Referencias
 
