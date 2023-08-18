@@ -8,17 +8,19 @@ class API::V1::PostsController < APIController
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = Post.new()
+    author = User.find_by(email: params[:author])
+    @post.author = author
+    trip = Trip.find(params[:trip_id])
+    @post.trip = trip
+
     if @post.save
-      params[:files].each do |file|
-        @post.medias.create(file: file)
-      end
       render json: @post
     else
       render json: @post.errors, status: :unprocessable_entity
     end
   end
-
+  
   def destroy
     @post.destroy
   end
@@ -51,12 +53,12 @@ class API::V1::PostsController < APIController
   # Only allow a list of trusted parameters through.
   # #TODO: More params like users, destinations, photos, etc.
   def post_params
-    params.fetch(:post, {}).permit(:id, :trip_id, :title, :description, :author, :public, :files)
+    params.fetch(:post, {}).permit(:id, :trip_id, :title, :description, :author, :public, :files, destination: [:id, :name, :latitude, :longitude, :country, :city, :trip_id])
   end
 
   def update_params
 
-    params.fetch(:post, {}).permit(:id, :title, :description, :author, :public, :files)
+    params.fetch(:post, {}).permit(:id, :trip_id, :title, :description, :author, :public, :files, destination: [:id, :name, :latitude, :longitude, :country, :city, :trip_id])
   end
 
 
