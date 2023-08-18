@@ -143,3 +143,5 @@ Deben entregar su trabajo en este repositorio, con posibilidad de realizar push 
 Para el desarrollo de la autenticación en esta aplicación se utilizó la siguiente guía: 
 [https://keygen.sh/blog/how-to-implement-api-key-authentication-in-rails-without-devise/]
 
+PRUEBAAAAAAAAAAAA
+
